@@ -1,0 +1,54 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0a0e17; color: #e2e8f0; min-height: 100vh; }
+.app { max-width: 1400px; margin: 0 auto; padding: 16px; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: #111827; border-radius: 12px; margin-bottom: 16px; flex-wrap: wrap; gap: 12px; }
+header h1 { font-size: 1.4rem; white-space: nowrap; }
+.header-controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.penetration-controls { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-left: 8px; padding-left: 12px; border-left: 1px solid #374151; }
+.select { background: #1f2937; color: #e2e8f0; border: 1px solid #374151; padding: 6px 12px; border-radius: 6px; font-size: 14px; }
+.input { background: #1f2937; color: #e2e8f0; border: 1px solid #374151; padding: 6px 12px; border-radius: 6px; font-size: 14px; width: 100%; }
+.btn { background: #1f2937; color: #e2e8f0; border: 1px solid #374151; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 14px; white-space: nowrap; }
+.btn:hover { background: #374151; }
+.btn-primary { background: #059669; border-color: #059669; }
+.btn-primary:hover { background: #047857; }
+.btn-danger { background: #dc2626; border-color: #dc2626; }
+.btn-danger:hover { background: #b91c1c; }
+main { display: grid; grid-template-columns: 280px 1fr 280px; gap: 16px; }
+.left-panel, .right-panel { display: flex; flex-direction: column; gap: 16px; }
+.center-panel { display: flex; flex-direction: column; gap: 16px; }
+.panel { background: #111827; border-radius: 12px; padding: 16px; }
+.panel h2, .panel h3 { font-size: 1rem; margin-bottom: 12px; color: #93c5fd; }
+.info-grid { display: flex; flex-direction: column; gap: 8px; }
+.info-item { display: flex; justify-content: space-between; font-size: 14px; }
+.info-item .label { color: #9ca3af; }
+.progress-section { margin-top: 8px; }
+.progress-bar { height: 24px; background: #1f2937; border-radius: 12px; overflow: hidden; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, #059669, #22c55e); border-radius: 12px; transition: width 0.3s; width: 0%; }
+.progress-text { display: flex; justify-content: space-between; font-size: 14px; margin-top: 6px; color: #9ca3af; }
+.row-selector { display: flex; flex-direction: column; gap: 6px; }
+.row-controls { display: flex; align-items: center; gap: 8px; }
+#currentRow { font-weight: bold; min-width: 24px; text-align: center; color: #60a5fa; }
+.quadrant-legend { display: flex; flex-direction: column; gap: 6px; }
+.legend-items { display: flex; flex-wrap: wrap; gap: 8px; }
+.legend-item { display: flex; align-items: center; gap: 4px; font-size: 12px; }
+.dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.dot-green { background: #22c55e; }
+.dot-yellow { background: #eab308; }
+.dot-red { background: #ef4444; }
+.dot-blue { background: #3b82f6; }
+.reactor-head { background: #111827; border-radius: 12px; padding: 24px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+#reactorSVG { width: 100%; max-width: 500px; }
+.pen-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); gap: 4px; max-height: 300px; overflow-y: auto; }
+.pen-cell { background: #1f2937; border: 1px solid #374151; border-radius: 6px; padding: 8px; text-align: center; cursor: pointer; font-size: 12px; transition: all 0.2s; }
+.pen-cell:hover { border-color: #60a5fa; }
+.pen-cell .pen-num { font-weight: bold; font-size: 14px; }
+.pen-cell .pen-row { color: #9ca3af; font-size: 10px; }
+.quadrant-details { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.q-box { padding: 12px; border-radius: 8px; text-align: center; cursor: pointer; border: 2px solid transparent; transition: all 0.2s; }
+.q-box:hover { transform: scale(1.05); }
+.q-box.active { border-color: #60a5fa; }
+.q-label { font-size: 11px; color: #9ca3af; }
+.q-status { font-size: 12px; font-weight: bold; }
+.export-section { display: flex; flex-direction: column; gap: 8px; }
+.export-buttons { display: flex; flex-direction: column; gap: 6px; }
+footer { margin-top: 16px; padding: 12px; background: #111827; border-radius: 8px; display: flex; justify-content: space-between; font-size: 12px; color: #6b7280; }
