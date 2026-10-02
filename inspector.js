@@ -110,7 +110,6 @@ const QuadrantStatus = {
 
 // Image upload/preview support
 let currentPenetrationId = null;
-const quadrantImages = {}; // {penetrationId: {quadrantNum: imageUrlOrDataUrl}}
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', () => {
