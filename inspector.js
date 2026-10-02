@@ -94,7 +94,10 @@ const elements = {
   exportCsvBtn: document.getElementById('exportCsvBtn'),
   printBtn: document.getElementById('printBtn'),
   statusMsg: document.getElementById('statusMsg'),
-  lastSaved: document.getElementById('lastSaved')
+  lastSaved: document.getElementById('lastSaved'),
+  addPenetrationBtn: document.getElementById('addPenetrationBtn'),
+  movePenetrationBtn: document.getElementById('movePenetrationBtn'),
+  deletePenetrationBtn: document.getElementById('deletePenetrationBtn')
 };
 
 // Quadrant status mapping
